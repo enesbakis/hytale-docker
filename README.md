@@ -1,6 +1,20 @@
 # Hytale Docker Server
 
+[![Docker Hub](https://img.shields.io/docker/v/enesbakis/hytale-docker?label=Docker%20Hub&sort=semver)](https://hub.docker.com/r/enesbakis/hytale-docker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/enesbakis/hytale-docker)](https://hub.docker.com/r/enesbakis/hytale-docker)
+[![Docker Image Size](https://img.shields.io/docker/image-size/enesbakis/hytale-docker/latest)](https://hub.docker.com/r/enesbakis/hytale-docker)
+
 A ready-to-use Docker configuration for running a Hytale server.
+
+## Pre-built Image
+
+You can use the pre-built image from Docker Hub:
+
+```bash
+docker pull enesbakis/hytale-docker:latest
+```
+
+Or build locally from source (see below).
 
 ## Requirements
 
