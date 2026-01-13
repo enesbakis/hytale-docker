@@ -1,0 +1,40 @@
+services:
+  hytale:
+    build: .
+    image: hytale-server:latest
+    container_name: hytale-server
+    
+    # Interactive mode for authentication
+    stdin_open: true
+    tty: true
+    
+    # Environment variables
+    env_file:
+      - .env
+    
+    # Network - UDP for QUIC protocol
+    ports:
+      - "${SERVER_PORT:-5520}:5520/udp"
+    
+    # Persistent storage
+    volumes:
+      - ./data:/data
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: ${MAX_MEMORY:-8G}
+        reservations:
+          memory: ${MEMORY:-4G}
+    
+    # Lifecycle
+    restart: unless-stopped
+    stop_grace_period: 60s
+    
+    # Logging
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"

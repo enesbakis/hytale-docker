@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "default": {
+      "permissions": []
+    },
+    "admin": {
+      "permissions": [
+        "*"
+      ]
+    }
+  },
+  "players": {}
+}

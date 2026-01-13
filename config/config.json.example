@@ -1,0 +1,6 @@
+{
+  "MaxPlayerCount": 20,
+  "ViewDistance": 12,
+  "Motd": "Hytale Server",
+  "AllowOfflineMode": false
+}
