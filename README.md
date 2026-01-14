@@ -35,6 +35,21 @@ cd hytale-docker
 
 Hytale server files are not included in this repository due to license restrictions.
 
+#### Option A: Download Script (Recommended)
+
+Use the official Hytale Downloader CLI to download the latest server files:
+
+```bash
+chmod +x scripts/download-server.sh
+./scripts/download-server.sh ./data
+```
+
+A browser window will open for OAuth2 authentication. Log in with your Hytale account to download the files.
+
+> **Note:** The download script requires Linux or Windows. For macOS, use the manual method below.
+
+#### Option B: Manual Copy
+
 If you have the Hytale Launcher installed, copy the files from:
 
 **Windows:**
