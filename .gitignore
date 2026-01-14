@@ -21,9 +21,8 @@ ehthumbs.db
 data/*
 !data/README.md
 !data/.gitignore
-server-files/
 
-# Auth token (generated at runtime)
+# Auth markers (generated at runtime)
 .auth_token
 
 # Logs

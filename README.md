@@ -33,18 +33,7 @@ cd hytale-docker
 
 ### 2. Obtain server files
 
-Hytale server files are not included in this repository due to license restrictions. You can use one of the following methods:
-
-#### Method A: Download Script (Recommended)
-
-```bash
-chmod +x scripts/download.sh
-./scripts/download.sh ./data
-```
-
-The script uses the Hytale Downloader CLI to download files. You will be prompted to log in with your Hytale account in the browser.
-
-#### Method B: Manual Copy
+Hytale server files are not included in this repository due to license restrictions.
 
 If you have the Hytale Launcher installed, copy the files from:
 
